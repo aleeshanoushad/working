@@ -1,0 +1,1 @@
+CREATE TABLE `cproject`.`user_model` ( `userid` INT(20) NOT NULL AUTO_INCREMENT , `firstname` VARCHAR(250) NOT NULL , `lastname` VARCHAR(250) NULL DEFAULT NULL , `email` VARCHAR(150) NOT NULL , `usertype` INT(10) NOT NULL , `password` VARCHAR(250) NOT NULL , PRIMARY KEY (`userid`)) ENGINE = InnoDB 
