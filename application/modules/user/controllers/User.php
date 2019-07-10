@@ -12,6 +12,9 @@ class User extends CI_Controller {
 	{
 		$this->load->view('dashboard');
 	}
+	public function profile(){
+		$this->load->view('user-profile');
+	}
 
 }
 

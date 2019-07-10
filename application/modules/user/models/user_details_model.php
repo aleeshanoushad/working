@@ -3,7 +3,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class User_details_model extends CI_Model { 
 
-	public $_table = 'User_details_model';
+	public $_table = 'user_details_model';
 	public $protected_attributes = array('ud_id');
 	protected $primary_key = 'ud_id';
 
