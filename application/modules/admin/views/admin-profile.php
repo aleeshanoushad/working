@@ -1,6 +1,9 @@
+<?php include 'header.php'; ?>
 <?php include 'profile-header.php'; ?>
-<?php include 'sidebar-admin.php'; ?>
+<?php if($userdetails){ if($userdetails->usertype == 1) { include 'sidebar-admin.php'; } else { include 'sidebar-user.php'; } }?>
   
+  </head>
+  <body>
         <!-- /# row -->
         <section id="main-content">
           <div class="row">
@@ -302,17 +305,6 @@
 
 
 
-
-
-
-    <!-- Common -->
-    <script src="assets/js/lib/jquery.min.js"></script>
-    <script src="assets/js/lib/jquery.nanoscroller.min.js"></script>
-    <script src="assets/js/lib/menubar/sidebar.js"></script>
-    <script src="assets/js/lib/preloader/pace.min.js"></script>
-    <script src="assets/js/lib/bootstrap.min.js"></script>
-    <script src="assets/js/scripts.js"></script>
-
     <!-- Calender -->
     <script src="assets/js/lib/jquery-ui/jquery-ui.min.js"></script>
     <script src="assets/js/lib/moment/moment.js"></script>
@@ -332,7 +324,6 @@
     <script src="assets/js/lib/flot-chart/flot-chart-init.js"></script>
 
     <!--  Chartist -->
-    <script src="assets/js/lib/chartist/chartist.min.js"></script>
     <script src="assets/js/lib/chartist/chartist-plugin-tooltip.min.js"></script>
     <script src="assets/js/lib/chartist/chartist-init.js"></script>
 
@@ -385,20 +376,6 @@
     <script src="assets/js/lib/vector-map/country/jquery.vmap.tunisia.js"></script>
     <script src="assets/js/lib/vector-map/country/jquery.vmap.europe.js"></script>
     <script src="assets/js/lib/vector-map/country/jquery.vmap.usa.js"></script>
-
-    <!--  Simple Weather -->
-    <script src="assets/js/lib/weather/jquery.simpleWeather.min.js"></script>
-    <script src="assets/js/lib/weather/weather-init.js"></script>
-
-    <!--  Owl Carousel -->
-    <script src="assets/js/lib/owl-carousel/owl.carousel.min.js"></script>
-    <script src="assets/js/lib/owl-carousel/owl.carousel-init.js"></script>
-
-    <!--  Calender 2 -->
-    <script src="assets/js/lib/calendar-2/moment.latest.min.js"></script>
-    <script src="assets/js/lib/calendar-2/pignose.calendar.min.js"></script>
-    <script src="assets/js/lib/calendar-2/pignose.init.js"></script>
-
 
     <!-- Datatable -->
     <script src="assets/js/lib/data-table/datatables.min.js"></script>
@@ -462,3 +439,4 @@
     <script src="assets/js/dashboard2.js"></script>
 
 </body>
+<?php include 'footer.php'; ?>

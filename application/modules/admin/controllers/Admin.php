@@ -27,6 +27,9 @@ class Admin extends CI_Controller {
 		
 		$userid = $this->session->userdata('user_id');
 		$data['userdetails'] =$this->lm->getuserdetails($userid);
+		// echo "<pre>";
+		// print_r ($data['userdetails']);
+		// echo "</pre>";exit;
 		$this->load->view('admin-profile', $data);
 	}
 	

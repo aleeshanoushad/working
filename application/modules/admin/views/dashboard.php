@@ -1,5 +1,5 @@
 <?php include 'header.php'; ?>
-<?php if($userdetails->usertype == '1') { include 'sidebar-admin.php'; } else { include 'sidebar-user.php';  } ?>
+<?php include 'sidebar-admin.php'; ?>
 
                     <!-- /# row -->
                     <section id="main-content">
@@ -9,7 +9,7 @@
                                     <div class="stat-widget-one">
                                         <div class="stat-icon dib"><i class="ti-money color-success border-success"></i></div>
                                         <div class="stat-content dib">
-                                            <div class="stat-text">Total Profit</div>
+                                            <div class="stat-text">Total Users</div>
                                             <div class="stat-digit">1,012</div>
                                         </div>
                                     </div>
@@ -20,7 +20,7 @@
                                     <div class="stat-widget-one">
                                         <div class="stat-icon dib"><i class="ti-user color-primary border-primary"></i></div>
                                         <div class="stat-content dib">
-                                            <div class="stat-text">New Customer</div>
+                                            <div class="stat-text">Total Documents</div>
                                             <div class="stat-digit">961</div>
                                         </div>
                                     </div>
@@ -31,7 +31,7 @@
                                     <div class="stat-widget-one">
                                         <div class="stat-icon dib"><i class="ti-layout-grid2 color-pink border-pink"></i></div>
                                         <div class="stat-content dib">
-                                            <div class="stat-text">Active Projects</div>
+                                            <div class="stat-text">Renewal in this month</div>
                                             <div class="stat-digit">770</div>
                                         </div>
                                     </div>
@@ -42,7 +42,7 @@
                                     <div class="stat-widget-one">
                                         <div class="stat-icon dib"><i class="ti-link color-danger border-danger"></i></div>
                                         <div class="stat-content dib">
-                                            <div class="stat-text">Referral</div>
+                                            <div class="stat-text">Not Renewed Documents </div>
                                             <div class="stat-digit">2,781</div>
                                         </div>
                                     </div>
@@ -53,7 +53,7 @@
                             <div class="col-lg-8">
                                 <div class="card">
                                     <div class="card-title">
-                                        <h4>Fee Collections and Expenses</h4>
+                                        <h4>Doc Collections and Renewals</h4>
 
                                     </div>
                                     <div class="card-body">
@@ -71,8 +71,10 @@
                                 </div>
                             </div>
                         </div>
+
                         <div class="row">
-                            <div class="col-lg-4">
+
+                           <!--  <div class="col-lg-4">
                                 <div class="row">
                                     <div class="col-lg-12">
                                         <div class="card bg-primary">
@@ -157,12 +159,12 @@
 
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                             <!-- /# column -->
                             <div class="col-lg-8">
                                 <div class="card">
                                     <div class="card-title pr">
-                                        <h4>All Exam Result</h4>
+                                        <h4>All Doc Details</h4>
 
                                     </div>
                                     <div class="card-body">
@@ -170,12 +172,12 @@
                                             <table class="table student-data-table m-t-20">
                                                 <thead>
                                                     <tr>
-                                                        <th><label><input type="checkbox" value=""></label>Exam Name</th>
-                                                        <th>Subject</th>
-                                                        <th>Grade Point</th>
-                                                        <th>Percent Form</th>
-                                                        <th>Percent Upto</th>
-                                                        <th>Date</th>
+                                                        <th><label><input type="checkbox" value=""></label>User Name</th>
+                                                        <th>Doc Name</th>
+                                                        <th>Renewal Date</th>
+                                                        <th>Renewed or Not</th>
+                                                        <th>Next Renewal</th>
+                                                        <!-- <th>Date</th> -->
                                                     </tr>
                                                 </thead>
                                                 <tbody>
@@ -191,7 +193,7 @@
                                                         <td>
                                                             100
                                                         </td>
-                                                        <td>20/04/2017</td>
+                                                        <!-- <td>20/04/2017</td> -->
                                                     </tr>
                                                     <tr>
                                                         <td>Class Test</td>
@@ -205,7 +207,7 @@
                                                         <td>
                                                             100
                                                         </td>
-                                                        <td>20/04/2017</td>
+                                                        <!-- <td>20/04/2017</td> -->
                                                     </tr>
                                                     <tr>
                                                         <td>Class Test</td>
@@ -219,7 +221,7 @@
                                                         <td>
                                                             100
                                                         </td>
-                                                        <td>20/04/2017</td>
+                                                        <!-- <td>20/04/2017</td> -->
                                                     </tr>
                                                     <tr>
                                                         <td>Class Test</td>
@@ -233,7 +235,7 @@
                                                         <td>
                                                             100
                                                         </td>
-                                                        <td>20/04/2017</td>
+                                                        <!-- <td>20/04/2017</td> -->
                                                     </tr>
                                                     <tr>
                                                         <td>Class Test</td>
@@ -247,7 +249,7 @@
                                                         <td>
                                                             100
                                                         </td>
-                                                        <td>20/04/2017</td>
+                                                        <!-- <td>20/04/2017</td> -->
                                                     </tr>
                                                     <tr>
                                                         <td>Class Test</td>
@@ -261,7 +263,7 @@
                                                         <td>
                                                             100
                                                         </td>
-                                                        <td>20/04/2017</td>
+                                                        <!-- <td>20/04/2017</td> -->
                                                     </tr>
                                                     <tr>
                                                         <td>Class Test</td>
@@ -275,7 +277,7 @@
                                                         <td>
                                                             100
                                                         </td>
-                                                        <td>20/04/2017</td>
+                                                        <!-- <td>20/04/2017</td> -->
                                                     </tr>
                                                 </tbody>
                                             </table>
@@ -284,9 +286,18 @@
                                 </div>
                             </div>
                             <!-- /# column -->
+
+                            <div class="col-lg-4">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="year-calendar"></div>
+                                    </div>
+                                </div>
+                                <!-- /# card -->
+                            </div>
                         </div>
                         <!-- /# row -->
-                        <div class="row">
+                        <!-- <div class="row">
                             <div class="col-lg-3">
                                 <div class="card p-0">
                                     <div class="stat-widget-three home-widget-three">
@@ -339,16 +350,9 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                         <div class="row">
-                            <div class="col-lg-4">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <div class="year-calendar"></div>
-                                    </div>
-                                </div>
-                                <!-- /# card -->
-                            </div>
+                            
                             <!-- /# column -->
                             <div class="col-lg-4">
                                 <div class="card">
