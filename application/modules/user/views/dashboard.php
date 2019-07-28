@@ -5,12 +5,12 @@
             <div class="nano">
                 <div class="nano-content">
                     <ul>
-                        <div class="logo"><a href="index.html"><!-- <img src="assets/images/logo.png" alt="" /> --><span>User</span></a></div>
+                        <div class="logo"><a href="index.html"><!-- <img src="assets/images/logo.png" alt="" /> --><span><?php echo  $userdetails->ud_firstname." ".$userdetails->ud_lastname ?></span></a></div>
                         <li class="label">Main</li>
                         <li><a class="sidebar-sub-toggle"><i class="ti-home"></i> Dashboard <span class="badge badge-primary">2</span> <span class="sidebar-collapse-icon ti-angle-down"></span></a>
                             <ul>
                                 <li><a href="index.html">Dashboard 1</a></li>
-                                <li><a href="index1.html">Dashboard 2</a></li>
+                                <!-- <li><a href="index1.html">Dashboard 2</a></li> -->
                             </ul>
                         </li>
 
@@ -28,7 +28,7 @@
                         </li>
                         <li><a href="app-event-calender.html"><i class="ti-calendar"></i> Calender </a></li>
                         <li><a href="app-email.html"><i class="ti-email"></i> Email</a></li>
-                        <li><a href="app-profile.html"><i class="ti-user"></i> Profile</a></li>
+                        <li><a href="<?php echo base_url()?>user/profile"><i class="ti-user"></i> Profile</a></li>
                         <li><a href="app-widget-card.html"><i class="ti-layout-grid2-alt"></i> Widget</a></li>
                         <li class="label">Features</li>
                         <li><a class="sidebar-sub-toggle"><i class="ti-layout"></i> UI Elements <span class="sidebar-collapse-icon ti-angle-down"></span></a>
@@ -250,7 +250,7 @@
                                     <div class="dropdown-content-body">
                                         <ul>
                                             <li>
-                                                <a href="#">
+                                                <a href="<?php echo base_url()?>user/profile">
                                                     <i class="ti-user"></i>
                                                     <span>Profile</span>
                                                 </a>

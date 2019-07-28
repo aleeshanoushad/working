@@ -1,322 +1,6 @@
 <?php include 'header.php'; ?>
-  
+<?php include 'sidebar-admin.php'; ?>
 
-        <div class="sidebar sidebar-hide-to-small sidebar-shrink sidebar-gestures">
-            <div class="nano">
-                <div class="nano-content">
-                    <ul>
-                        <div class="logo"><a href="index.html"><!-- <img src="assets/images/logo.png" alt="" /> --><span>Admin</span></a></div>
-                        <li class="label">Main</li>
-                        <li><a class="sidebar-sub-toggle"><i class="ti-home"></i> Dashboard <span class="badge badge-primary">2</span> <span class="sidebar-collapse-icon ti-angle-down"></span></a>
-                            <ul>
-                                <li><a href="index.html">Dashboard 1</a></li>
-                                <li><a href="index1.html">Dashboard 2</a></li>
-                            </ul>
-                        </li>
-
-                        <li class="label">Apps</li>
-                        <li><a class="sidebar-sub-toggle"><i class="ti-bar-chart-alt"></i>  Charts  <span class="sidebar-collapse-icon ti-angle-down"></span></a>
-                            <ul>
-                                <li><a href="chart-flot.html">Flot</a></li>
-                                <li><a href="chart-morris.html">Morris</a></li>
-                                <li><a href="chartjs.html">Chartjs</a></li>
-                                <li><a href="chartist.html">Chartist</a></li>
-                                <li><a href="chart-peity.html">Peity</a></li>
-                                <li><a href="chart-sparkline.html">Sparkle</a></li>
-                                <li><a href="chart-knob.html">Knob</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="app-event-calender.html"><i class="ti-calendar"></i> Calender </a></li>
-                        <li><a href="app-email.html"><i class="ti-email"></i> Email</a></li>
-                        <li><a href="app-profile.html"><i class="ti-user"></i> Profile</a></li>
-                        <li><a href="app-widget-card.html"><i class="ti-layout-grid2-alt"></i> Widget</a></li>
-                        <li class="label">Features</li>
-                        <li><a class="sidebar-sub-toggle"><i class="ti-layout"></i> UI Elements <span class="sidebar-collapse-icon ti-angle-down"></span></a>
-                            <ul>
-                                <li><a href="ui-typography.html">Typography</a></li>
-                                <li><a href="ui-alerts.html">Alerts</a></li>
-
-                                <li><a href="ui-button.html">Button</a></li>
-                                <li><a href="ui-dropdown.html">Dropdown</a></li>
-
-                                <li><a href="ui-list-group.html">List Group</a></li>
-
-                                <li><a href="ui-progressbar.html">Progressbar</a></li>
-                                <li><a href="ui-tab.html">Tab</a></li>
-
-                            </ul>
-                        </li>
-                        <li><a class="sidebar-sub-toggle"><i class="ti-panel"></i> Components <span class="sidebar-collapse-icon ti-angle-down"></span></a>
-                            <ul>
-                                <li><a href="uc-calendar.html">Calendar</a></li>
-                                <li><a href="uc-carousel.html">Carousel</a></li>
-                                <li><a href="uc-weather.html">Weather</a></li>
-                                <li><a href="uc-datamap.html">Datamap</a></li>
-                                <li><a href="uc-todo-list.html">To do</a></li>
-                                <li><a href="uc-scrollable.html">Scrollable</a></li>
-                                <li><a href="uc-sweetalert.html">Sweet Alert</a></li>
-                                <li><a href="uc-toastr.html">Toastr</a></li>
-                                <li><a href="uc-range-slider-basic.html">Basic Range Slider</a></li>
-                                <li><a href="uc-range-slider-advance.html">Advance Range Slider</a></li>
-                                <li><a href="uc-nestable.html">Nestable</a></li>
-
-                                <li><a href="uc-rating-bar-rating.html">Bar Rating</a></li>
-                                <li><a href="uc-rating-jRate.html">jRate</a></li>
-                            </ul>
-                        </li>
-                        <li><a class="sidebar-sub-toggle"><i class="ti-layout-grid4-alt"></i> Table <span class="sidebar-collapse-icon ti-angle-down"></span></a>
-                            <ul>
-                                <li><a href="table-basic.html">Basic</a></li>
-
-                                <li><a href="table-export.html">Datatable Export</a></li>
-                                <li><a href="table-row-select.html">Datatable Row Select</a></li>
-                                <li><a href="table-jsgrid.html">Editable </a></li>
-                            </ul>
-                        </li>
-                        <li><a class="sidebar-sub-toggle"><i class="ti-heart"></i> Icons <span class="sidebar-collapse-icon ti-angle-down"></span></a>
-                            <ul>
-                                <li><a href="font-themify.html">Themify</a></li>
-                            </ul>
-                        </li>
-                        <li><a class="sidebar-sub-toggle"><i class="ti-map"></i> Maps <span class="sidebar-collapse-icon ti-angle-down"></span></a>
-                            <ul>
-                                <li><a href="gmaps.html">Basic</a></li>
-                                <li><a href="vector-map.html">Vector Map</a></li>
-                            </ul>
-                        </li>
-                        <li class="label">Form</li>
-                        <li><a href="form-basic.html"><i class="ti-view-list-alt"></i> Basic Form </a></li>
-                        <li class="label">Extra</li>
-                        <li><a class="sidebar-sub-toggle"><i class="ti-files"></i> Invoice <span class="sidebar-collapse-icon ti-angle-down"></span></a>
-                            <ul>
-                                <li><a href="invoice.html">Basic</a></li>
-                                <li><a href="invoice-editable.html">Editable</a></li>
-                            </ul>
-                        </li>
-                        <li><a class="sidebar-sub-toggle"><i class="ti-target"></i> Pages <span class="sidebar-collapse-icon ti-angle-down"></span></a>
-                            <ul>
-                                <li><a href="page-login.html">Login</a></li>
-                                <li><a href="page-register.html">Register</a></li>
-                                <li><a href="page-reset-password.html">Forgot password</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="../documentation/index.html"><i class="ti-file"></i> Documentation</a></li>
-                        <li><a><i class="ti-close"></i> Logout</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <!-- /# sidebar -->
-
-            <div class="header">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="float-left">
-                        <div class="hamburger sidebar-toggle">
-                            <span class="line"></span>
-                            <span class="line"></span>
-                            <span class="line"></span>
-                        </div>
-                    </div>
-                    <div class="float-right">
-                        <div class="dropdown dib">
-                            <div class="header-icon" data-toggle="dropdown">
-                                <i class="ti-bell"></i>
-                                <div class="drop-down dropdown-menu dropdown-menu-right">
-                                    <div class="dropdown-content-heading">
-                                        <span class="text-left">Recent Notifications</span>
-                                    </div>
-                                    <div class="dropdown-content-body">
-                                        <ul>
-                                            <li>
-                                                <a href="#">
-                                                    <img class="pull-left m-r-10 avatar-img" src="assets/images/avatar/3.jpg" alt="" />
-                                                    <div class="notification-content">
-                                                        <small class="notification-timestamp pull-right">02:34 PM</small>
-                                                        <div class="notification-heading">Mr. John</div>
-                                                        <div class="notification-text">5 members joined today </div>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#">
-                                                    <img class="pull-left m-r-10 avatar-img" src="assets/images/avatar/3.jpg" alt="" />
-                                                    <div class="notification-content">
-                                                        <small class="notification-timestamp pull-right">02:34 PM</small>
-                                                        <div class="notification-heading">Mariam</div>
-                                                        <div class="notification-text">likes a photo of you</div>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#">
-                                                    <img class="pull-left m-r-10 avatar-img" src="assets/images/avatar/3.jpg" alt="" />
-                                                    <div class="notification-content">
-                                                        <small class="notification-timestamp pull-right">02:34 PM</small>
-                                                        <div class="notification-heading">Tasnim</div>
-                                                        <div class="notification-text">Hi Teddy, Just wanted to let you ...</div>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#">
-                                                    <img class="pull-left m-r-10 avatar-img" src="assets/images/avatar/3.jpg" alt="" />
-                                                    <div class="notification-content">
-                                                        <small class="notification-timestamp pull-right">02:34 PM</small>
-                                                        <div class="notification-heading">Mr. John</div>
-                                                        <div class="notification-text">Hi Teddy, Just wanted to let you ...</div>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <li class="text-center">
-                                                <a href="#" class="more-link">See All</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="dropdown dib">
-                            <div class="header-icon" data-toggle="dropdown">
-                                <i class="ti-email"></i>
-                                <div class="drop-down dropdown-menu dropdown-menu-right">
-                                    <div class="dropdown-content-heading">
-                                        <span class="text-left">2 New Messages</span>
-                                        <a href="email.html">
-                                            <i class="ti-pencil-alt pull-right"></i>
-                                        </a>
-                                    </div>
-                                    <div class="dropdown-content-body">
-                                        <ul>
-                                            <li class="notification-unread">
-                                                <a href="#">
-                                                    <img class="pull-left m-r-10 avatar-img" src="assets/images/avatar/1.jpg" alt="" />
-                                                    <div class="notification-content">
-                                                        <small class="notification-timestamp pull-right">02:34 PM</small>
-                                                        <div class="notification-heading">Michael Qin</div>
-                                                        <div class="notification-text">Hi Teddy, Just wanted to let you ...</div>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <li class="notification-unread">
-                                                <a href="#">
-                                                    <img class="pull-left m-r-10 avatar-img" src="assets/images/avatar/2.jpg" alt="" />
-                                                    <div class="notification-content">
-                                                        <small class="notification-timestamp pull-right">02:34 PM</small>
-                                                        <div class="notification-heading">Mr. John</div>
-                                                        <div class="notification-text">Hi Teddy, Just wanted to let you ...</div>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#">
-                                                    <img class="pull-left m-r-10 avatar-img" src="assets/images/avatar/3.jpg" alt="" />
-                                                    <div class="notification-content">
-                                                        <small class="notification-timestamp pull-right">02:34 PM</small>
-                                                        <div class="notification-heading">Michael Qin</div>
-                                                        <div class="notification-text">Hi Teddy, Just wanted to let you ...</div>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#">
-                                                    <img class="pull-left m-r-10 avatar-img" src="assets/images/avatar/2.jpg" alt="" />
-                                                    <div class="notification-content">
-                                                        <small class="notification-timestamp pull-right">02:34 PM</small>
-                                                        <div class="notification-heading">Mr. John</div>
-                                                        <div class="notification-text">Hi Teddy, Just wanted to let you ...</div>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <li class="text-center">
-                                                <a href="#" class="more-link">See All</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="dropdown dib">
-                            <div class="header-icon" data-toggle="dropdown">
-                                <span class="user-avatar">John
-                                    <i class="ti-angle-down f-s-10"></i>
-                                </span>
-                                <div class="drop-down dropdown-profile dropdown-menu dropdown-menu-right">
-                                    <div class="dropdown-content-heading">
-                                        <span class="text-left">Upgrade Now</span>
-                                        <p class="trial-day">30 Days Trail</p>
-                                    </div>
-                                    <div class="dropdown-content-body">
-                                        <ul>
-                                            <li>
-                                                <a href="#">
-                                                    <i class="ti-user"></i>
-                                                    <span>Profile</span>
-                                                </a>
-                                            </li>
-
-                                            <li>
-                                                <a href="#">
-                                                    <i class="ti-email"></i>
-                                                    <span>Inbox</span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#">
-                                                    <i class="ti-settings"></i>
-                                                    <span>Setting</span>
-                                                </a>
-                                            </li>
-
-                                            <li>
-                                                <a href="#">
-                                                    <i class="ti-lock"></i>
-                                                    <span>Lock Screen</span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#">
-                                                    <i class="ti-power-off"></i>
-                                                    <span>Logout</span>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-        <div class="content-wrap">
-            <div class="main">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-lg-8 p-r-0 title-margin-right">
-                            <div class="page-header">
-                                <div class="page-title">
-                                    <h1>Hello, <span>Welcome Here</span></h1>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- /# column -->
-                        <div class="col-lg-4 p-l-0 title-margin-left">
-                            <div class="page-header">
-                                <div class="page-title">
-                                    <ol class="breadcrumb">
-                                        <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
-                                        <li class="breadcrumb-item active">Home</li>
-                                    </ol>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- /# column -->
-                    </div>
                     <!-- /# row -->
                     <section id="main-content">
                         <div class="row">
@@ -325,7 +9,7 @@
                                     <div class="stat-widget-one">
                                         <div class="stat-icon dib"><i class="ti-money color-success border-success"></i></div>
                                         <div class="stat-content dib">
-                                            <div class="stat-text">Total Profit</div>
+                                            <div class="stat-text">Total Users</div>
                                             <div class="stat-digit">1,012</div>
                                         </div>
                                     </div>
@@ -336,7 +20,7 @@
                                     <div class="stat-widget-one">
                                         <div class="stat-icon dib"><i class="ti-user color-primary border-primary"></i></div>
                                         <div class="stat-content dib">
-                                            <div class="stat-text">New Customer</div>
+                                            <div class="stat-text">Total Documents</div>
                                             <div class="stat-digit">961</div>
                                         </div>
                                     </div>
@@ -347,7 +31,7 @@
                                     <div class="stat-widget-one">
                                         <div class="stat-icon dib"><i class="ti-layout-grid2 color-pink border-pink"></i></div>
                                         <div class="stat-content dib">
-                                            <div class="stat-text">Active Projects</div>
+                                            <div class="stat-text">Renewal in this month</div>
                                             <div class="stat-digit">770</div>
                                         </div>
                                     </div>
@@ -358,7 +42,7 @@
                                     <div class="stat-widget-one">
                                         <div class="stat-icon dib"><i class="ti-link color-danger border-danger"></i></div>
                                         <div class="stat-content dib">
-                                            <div class="stat-text">Referral</div>
+                                            <div class="stat-text">Not Renewed Documents </div>
                                             <div class="stat-digit">2,781</div>
                                         </div>
                                     </div>
@@ -369,7 +53,7 @@
                             <div class="col-lg-8">
                                 <div class="card">
                                     <div class="card-title">
-                                        <h4>Fee Collections and Expenses</h4>
+                                        <h4>Doc Collections and Renewals</h4>
 
                                     </div>
                                     <div class="card-body">
@@ -387,8 +71,10 @@
                                 </div>
                             </div>
                         </div>
+
                         <div class="row">
-                            <div class="col-lg-4">
+
+                           <!--  <div class="col-lg-4">
                                 <div class="row">
                                     <div class="col-lg-12">
                                         <div class="card bg-primary">
@@ -473,12 +159,12 @@
 
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                             <!-- /# column -->
                             <div class="col-lg-8">
                                 <div class="card">
                                     <div class="card-title pr">
-                                        <h4>All Exam Result</h4>
+                                        <h4>All Doc Details</h4>
 
                                     </div>
                                     <div class="card-body">
@@ -486,12 +172,12 @@
                                             <table class="table student-data-table m-t-20">
                                                 <thead>
                                                     <tr>
-                                                        <th><label><input type="checkbox" value=""></label>Exam Name</th>
-                                                        <th>Subject</th>
-                                                        <th>Grade Point</th>
-                                                        <th>Percent Form</th>
-                                                        <th>Percent Upto</th>
-                                                        <th>Date</th>
+                                                        <th><label><input type="checkbox" value=""></label>User Name</th>
+                                                        <th>Doc Name</th>
+                                                        <th>Renewal Date</th>
+                                                        <th>Renewed or Not</th>
+                                                        <th>Next Renewal</th>
+                                                        <!-- <th>Date</th> -->
                                                     </tr>
                                                 </thead>
                                                 <tbody>
@@ -507,7 +193,7 @@
                                                         <td>
                                                             100
                                                         </td>
-                                                        <td>20/04/2017</td>
+                                                        <!-- <td>20/04/2017</td> -->
                                                     </tr>
                                                     <tr>
                                                         <td>Class Test</td>
@@ -521,7 +207,7 @@
                                                         <td>
                                                             100
                                                         </td>
-                                                        <td>20/04/2017</td>
+                                                        <!-- <td>20/04/2017</td> -->
                                                     </tr>
                                                     <tr>
                                                         <td>Class Test</td>
@@ -535,7 +221,7 @@
                                                         <td>
                                                             100
                                                         </td>
-                                                        <td>20/04/2017</td>
+                                                        <!-- <td>20/04/2017</td> -->
                                                     </tr>
                                                     <tr>
                                                         <td>Class Test</td>
@@ -549,7 +235,7 @@
                                                         <td>
                                                             100
                                                         </td>
-                                                        <td>20/04/2017</td>
+                                                        <!-- <td>20/04/2017</td> -->
                                                     </tr>
                                                     <tr>
                                                         <td>Class Test</td>
@@ -563,7 +249,7 @@
                                                         <td>
                                                             100
                                                         </td>
-                                                        <td>20/04/2017</td>
+                                                        <!-- <td>20/04/2017</td> -->
                                                     </tr>
                                                     <tr>
                                                         <td>Class Test</td>
@@ -577,7 +263,7 @@
                                                         <td>
                                                             100
                                                         </td>
-                                                        <td>20/04/2017</td>
+                                                        <!-- <td>20/04/2017</td> -->
                                                     </tr>
                                                     <tr>
                                                         <td>Class Test</td>
@@ -591,7 +277,7 @@
                                                         <td>
                                                             100
                                                         </td>
-                                                        <td>20/04/2017</td>
+                                                        <!-- <td>20/04/2017</td> -->
                                                     </tr>
                                                 </tbody>
                                             </table>
@@ -600,9 +286,18 @@
                                 </div>
                             </div>
                             <!-- /# column -->
+
+                            <div class="col-lg-4">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="year-calendar"></div>
+                                    </div>
+                                </div>
+                                <!-- /# card -->
+                            </div>
                         </div>
                         <!-- /# row -->
-                        <div class="row">
+                        <!-- <div class="row">
                             <div class="col-lg-3">
                                 <div class="card p-0">
                                     <div class="stat-widget-three home-widget-three">
@@ -655,16 +350,9 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                         <div class="row">
-                            <div class="col-lg-4">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <div class="year-calendar"></div>
-                                    </div>
-                                </div>
-                                <!-- /# card -->
-                            </div>
+                            
                             <!-- /# column -->
                             <div class="col-lg-4">
                                 <div class="card">

@@ -27,15 +27,6 @@ class Login extends CI_Controller {
 
 	public function index()
 	{
-
-		if($this->session->userdata('loginid')) {
-		
-		 $usrtype = $this->session->userdata('sessionusertype');
-         $usertypename = $this->session->userdata('sessionusertypename');
-         echo $usertypename;
-
-	  }
-	  // echo "out";
 	  $this->load->view('loginsignup');
 	}
 	
@@ -69,30 +60,49 @@ class Login extends CI_Controller {
 	public function loginned()
 	{
 		$this->load->model('login/Login_model','lm');
+		$this->load->model('login/Session_model','sm');
 
 		$email=$this->input->post('email');
 		$password=$this->input->post('password');
 		$encryptpass=md5($password);
 		$logged =$this->lm->activeuser($email,$encryptpass);
+		
 
 	
 		if(!empty($logged)){
 			$arraysession = array(
-				'loginid' => $logged->userid
+				'user_id' => $logged->userid,
+				'user_name'=>$logged->firstname." ".$logged->lastname,
+				'ip_address'=>$this->input->ip_address()
 			);
 			
+			
 			$this->session->set_userdata($arraysession);
+
+			$insrt =$this->sm->insert($arraysession);
+
 			$this->session->set_flashdata('messageS', 'Sign Up sucessfuly.');
+			
+				redirect('admin/index','refresh');
+			
 		}else{
-			$this->session->set_flashdata('messageE', 'Error occured try again.');
+			$this->session->set_flashdata('messageE', 'Username or Pasword is incorrect..please try again.');
 
 		}
-		if($logged->usertype == '0'){
-			redirect('user/index','refresh');
-		}else{
-			redirect('admin/index','refresh');
-		}
 		
+		
+	}
+	public function logout()
+	{
+
+		$user_data = $this->session->all_userdata();
+        foreach ($user_data as $key => $value) {
+            
+                $this->session->unset_userdata($key);
+           
+        }
+    // $this->session->sess_destroy();
+    redirect('Login');
 	}
 }
 

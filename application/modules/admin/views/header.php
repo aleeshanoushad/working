@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Admin Dashboard</title>
+        <title>PinDoc</title>
         <!-- ================= Favicon ================== -->
         <!-- Standard -->
         <link rel="shortcut icon" href="http://placehold.it/64.png/000/fff">
@@ -28,5 +28,4 @@
         <link href="<?php echo base_url(); ?>assests/template/assets/css/lib/bootstrap.min.css" rel="stylesheet">
         <link href="<?php echo base_url(); ?>assests/template/assets/css/lib/helper.css" rel="stylesheet">
         <link href="<?php echo base_url(); ?>assests/template/assets/css/style.css" rel="stylesheet">
-    </head>
-  <body>
+    

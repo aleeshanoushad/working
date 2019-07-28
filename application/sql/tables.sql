@@ -20,11 +20,15 @@ INSERT INTO `user_details_model` (`ud_id`, `ud_userid`, `ud_firstname`, `ud_last
 CREATE TABLE `ci_sessions` (
   `session_id` varchar(40) NOT NULL DEFAULT '0',
   `ip_address` varchar(45) NOT NULL DEFAULT '0',
-  `user_agent` varchar(120) NOT NULL,
+  `user_id` int(11) DEFAULT NULL,
+  `user_name` varchar(250) NOT NULL,
   `last_activity` int(10) UNSIGNED NOT NULL DEFAULT '0',
   `user_data` text NOT NULL
-);
-ALTER TABLE `ci_sessions` ADD PRIMARY KEY (`session_id`), ADD KEY `last_activity_idx` (`last_activity`);
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+ALTER TABLE `ci_sessions`
+  ADD PRIMARY KEY (`session_id`),
+  ADD KEY `last_activity_idx` (`last_activity`);
+  ALTER TABLE `ci_sessions` CHANGE `session_id` `session_id` INT(40) NOT NULL AUTO_INCREMENT;
 
 CREATE TABLE `user_model` (
   `userid` int(20) NOT NULL AUTO_INCREMENT,
