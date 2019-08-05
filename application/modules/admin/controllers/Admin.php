@@ -32,6 +32,14 @@ class Admin extends CI_Controller {
 		// echo "</pre>";exit;
 		$this->load->view('admin-profile', $data);
 	}
+
+	public function addprofile(){
+		
+		$userid = $this->session->userdata('user_id');
+		$data['userdetails'] =$this->lm->getuserdetails($userid);
+		
+		$this->load->view('addprofile', $data);
+	}
 	
 
 

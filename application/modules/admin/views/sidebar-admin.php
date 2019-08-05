@@ -13,19 +13,9 @@
             <a class="sidebar-sub-toggle">
               <i class="ti-home"></i> Dashboard
               <span class="badge badge-primary">2</span>
-              <span class="sidebar-collapse-icon ti-angle-down"></span>
+              <!-- <span class="sidebar-collapse-icon ti-angle-down"></span> -->
             </a>
-            <ul>
-              <li>
-                <a href="index.html">Dashboard</a>
-              </li>
-              <!-- <li>
-                <a href="index1.html">Dashboard 2</a>
-              </li> -->
-
-
-
-            </ul>
+            
           </li>
 
           <li class="label">Profile</li>
@@ -63,7 +53,7 @@
               <i class="ti-calendar"></i>View Profile</a>
           </li>
           <li>
-            <a href="app-email.html">
+            <a href="<?php echo base_url(); ?>admin/addprofile">
               <i class="ti-email"></i>Update Profile</a>
           </li>
           <!-- <li>
@@ -431,33 +421,8 @@
     </div>
   </div>
 
-
-
   <div class="content-wrap">
     <div class="main">
       <div class="container-fluid">
-        <div class="row">
-          <div class="col-lg-8 p-r-0 title-margin-right">
-            <div class="page-header">
-              <div class="page-title">
-                <h1>Hello,
-                  <span>Welcome Here</span>
-                </h1>
-              </div>
-            </div>
-          </div>
-          <!-- /# column -->
-          <div class="col-lg-4 p-l-0 title-margin-left">
-            <div class="page-header">
-              <div class="page-title">
-                <ol class="breadcrumb">
-                  <li class="breadcrumb-item">
-                    <a href="#">Dashboard</a>
-                  </li>
-                  <li class="breadcrumb-item active">App-Profile</li>
-                </ol>
-              </div>
-            </div>
-          </div>
-          <!-- /# column -->
-        </div>
+
+        
