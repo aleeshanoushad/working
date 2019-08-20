@@ -87,6 +87,7 @@ class Login extends CI_Controller {
 			
 		}else{
 			$this->session->set_flashdata('messageE', 'Username or Password is incorrect..please try again.');
+			redirect('login/index','refresh');
 
 		}
 		
@@ -102,7 +103,7 @@ class Login extends CI_Controller {
            
         }
     $this->session->sess_destroy();
-    redirect('Login');
+    redirect('login');
 	}
 }
 

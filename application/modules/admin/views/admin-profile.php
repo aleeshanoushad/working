@@ -14,7 +14,7 @@
                     <div class="row">
                       <div class="col-lg-4">
                         <div class="user-photo m-b-30">
-                          <img class="img-fluid" src="assets/images/user-profile.jpg" alt="" />
+                          <img class="img-fluid" src="<?php echo base_url(); ?>assests/images/190604111020_PRO_Npo2F.jpg" alt="<?php echo base_url(); ?>assests/images/Profile-Icon.jpg" />
                         </div>
                         <div class="user-work">
                           <h4>work</h4>
@@ -55,7 +55,7 @@
                         <div class="user-Location">
                           <i class="ti-location-pin"></i> New York, New York</div>
                         <div class="user-job-title">Product Designer</div>
-                        <div class="ratings">
+                        <!-- <div class="ratings">
                           <h4>Ratings</h4>
                           <div class="rating-star">
                             <span>8.9</span>
@@ -65,11 +65,11 @@
                             <i class="ti-star color-primary"></i>
                             <i class="ti-star"></i>
                           </div>
-                        </div>
-                        <div class="user-send-message">
+                        </div> -->
+                        <!-- <div class="user-send-message">
                           <button class="btn btn-primary btn-addon" type="button">
                             <i class="ti-email"></i>Send Message</button>
-                        </div>
+                        </div> -->
                         <div class="custom-tab user-profile-tab">
                           <ul class="nav nav-tabs" role="tablist">
                             <li role="presentation" class="active">
@@ -92,16 +92,16 @@
                                   <span class="contact-title">Email:</span>
                                   <span class="contact-email">hello@Admin Board.com</span>
                                 </div>
-                                <div class="website-content">
+                                <!-- <div class="website-content">
                                   <span class="contact-title">Website:</span>
                                   <span class="contact-website">www.Admin Board.com</span>
                                 </div>
                                 <div class="skype-content">
                                   <span class="contact-title">Skype:</span>
                                   <span class="contact-skype">Admin Board</span>
-                                </div>
+                                </div> -->
                               </div>
-                              <div class="basic-information">
+                              <!-- <div class="basic-information">
                                 <h4>Basic information</h4>
                                 <div class="birthday-content">
                                   <span class="contact-title">Birthday:</span>
@@ -111,7 +111,7 @@
                                   <span class="contact-title">Gender:</span>
                                   <span class="gender">Male</span>
                                 </div>
-                              </div>
+                              </div> -->
                             </div>
                           </div>
                         </div>
@@ -123,7 +123,7 @@
             </div>
           </div>
           <!-- /# row -->
-          <div class="row">
+          <!-- <div class="row">
             <div class="col-lg-6">
               <div class="card">
                 <div class="card-title">
@@ -195,9 +195,9 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </div> -->
             <!-- /# column -->
-            <div class="col-lg-6">
+            <!-- <div class="col-lg-6">
               <div class="card">
                 <div class="card-title">
                   <h4>Recent Comments </h4>
@@ -284,11 +284,11 @@
                   </div>
                 </div>
               </div>
-              <!-- /# card -->
-            </div>
+            /# card 
+            </div> -->
             <!-- /# column -->
-          </div>
-          <div class="row">
+         <!--  </div> -->
+          <!-- <div class="row">
             <div class="col-lg-12">
               <div class="footer">
                 <p>2018 © Admin Board. -
@@ -296,87 +296,19 @@
                 </p>
               </div>
             </div>
-          </div>
+          </div> -->
         </section>
       </div>
     </div>
   </div>
 
-
-
-
-    <!-- Calender -->
-    <script src="assets/js/lib/jquery-ui/jquery-ui.min.js"></script>
-    <script src="assets/js/lib/moment/moment.js"></script>
-    <script src="assets/js/lib/calendar/fullcalendar.min.js"></script>
-    <script src="assets/js/lib/calendar/fullcalendar-init.js"></script>
-
-    <!--  Flot Chart -->
-    <script src="assets/js/lib/flot-chart/excanvas.min.js"></script>
-    <script src="assets/js/lib/flot-chart/jquery.flot.js"></script>
-    <script src="assets/js/lib/flot-chart/jquery.flot.pie.js"></script>
-    <script src="assets/js/lib/flot-chart/jquery.flot.time.js"></script>
-    <script src="assets/js/lib/flot-chart/jquery.flot.stack.js"></script>
-    <script src="assets/js/lib/flot-chart/jquery.flot.resize.js"></script>
-    <script src="assets/js/lib/flot-chart/jquery.flot.crosshair.js"></script>
-    <script src="assets/js/lib/flot-chart/curvedLines.js"></script>
-    <script src="assets/js/lib/flot-chart/flot-tooltip/jquery.flot.tooltip.min.js"></script>
-    <script src="assets/js/lib/flot-chart/flot-chart-init.js"></script>
-
-    <!--  Chartist -->
-    <script src="assets/js/lib/chartist/chartist-plugin-tooltip.min.js"></script>
-    <script src="assets/js/lib/chartist/chartist-init.js"></script>
-
-    <!--  Chartjs -->
-    <script src="assets/js/lib/chart-js/Chart.bundle.js"></script>
-    <script src="assets/js/lib/chart-js/chartjs-init.js"></script>
-
-    <!--  Knob -->
-    <script src="assets/js/lib/knob/jquery.knob.min.js "></script>
-    <script src="assets/js/lib/knob/knob.init.js "></script>
-
-    <!--  Morris -->
-    <script src="assets/js/lib/morris-chart/raphael-min.js"></script>
-    <script src="assets/js/lib/morris-chart/morris.js"></script>
-    <script src="assets/js/lib/morris-chart/morris-init.js"></script>
-
-    <!--  Peity -->
-    <script src="assets/js/lib/peitychart/jquery.peity.min.js"></script>
-    <script src="assets/js/lib/peitychart/peitychart.init.js"></script>
-
-    <!--  Sparkline -->
-    <script src="assets/js/lib/sparklinechart/jquery.sparkline.min.js"></script>
-    <script src="assets/js/lib/sparklinechart/sparkline.init.js"></script>
-
+    
     <!-- Select2 -->
     <script src="assets/js/lib/select2/select2.full.min.js"></script>
 
     <!--  Validation -->
     <script src="assets/js/lib/form-validation/jquery.validate.min.js"></script>
     <script src="assets/js/lib/form-validation/jquery.validate-init.js"></script>
-
-    <!--  Circle Progress -->
-    <script src="assets/js/lib/circle-progress/circle-progress.min.js"></script>
-    <script src="assets/js/lib/circle-progress/circle-progress-init.js"></script>
-
-    <!--  Vector Map -->
-    <script src="assets/js/lib/vector-map/jquery.vmap.js"></script>
-    <script src="assets/js/lib/vector-map/jquery.vmap.min.js"></script>
-    <script src="assets/js/lib/vector-map/jquery.vmap.sampledata.js"></script>
-    <script src="assets/js/lib/vector-map/country/jquery.vmap.world.js"></script>
-    <script src="assets/js/lib/vector-map/country/jquery.vmap.algeria.js"></script>
-    <script src="assets/js/lib/vector-map/country/jquery.vmap.argentina.js"></script>
-    <script src="assets/js/lib/vector-map/country/jquery.vmap.brazil.js"></script>
-    <script src="assets/js/lib/vector-map/country/jquery.vmap.france.js"></script>
-    <script src="assets/js/lib/vector-map/country/jquery.vmap.germany.js"></script>
-    <script src="assets/js/lib/vector-map/country/jquery.vmap.greece.js"></script>
-    <script src="assets/js/lib/vector-map/country/jquery.vmap.iran.js"></script>
-    <script src="assets/js/lib/vector-map/country/jquery.vmap.iraq.js"></script>
-    <script src="assets/js/lib/vector-map/country/jquery.vmap.russia.js"></script>
-    <script src="assets/js/lib/vector-map/country/jquery.vmap.tunisia.js"></script>
-    <script src="assets/js/lib/vector-map/country/jquery.vmap.europe.js"></script>
-    <script src="assets/js/lib/vector-map/country/jquery.vmap.usa.js"></script>
-
     <!-- Datatable -->
     <script src="assets/js/lib/data-table/datatables.min.js"></script>
     <script src="assets/js/lib/data-table/buttons.dataTables.min.js"></script>
@@ -402,30 +334,6 @@
     <script src="assets/js/lib/jsgrid/fields/jsgrid.field.checkbox.js"></script>
     <script src="assets/js/lib/jsgrid/fields/jsgrid.field.control.js"></script>
     <script src="assets/js/lib/jsgrid/jsgrid-init.js"></script>
-
-    <!--  Datamap -->
-    <script src="assets/js/lib/datamap/d3.min.js"></script>
-    <script src="assets/js/lib/datamap/topojson.js"></script>
-    <script src="assets/js/lib/datamap/datamaps.world.min.js"></script>
-    <script src="assets/js/lib/datamap/datamap-init.js"></script>
-
-    <!--  Nestable -->
-    <script src="assets/js/lib/nestable/jquery.nestable.js"></script>
-    <script src="assets/js/lib/nestable/nestable.init.js"></script>
-
-    <!--ION Range Slider JS-->
-    <script src="assets/js/lib/rangeSlider/ion.rangeSlider.min.js"></script>
-    <script src="assets/js/lib/rangeSlider/moment.js"></script>
-    <script src="assets/js/lib/rangeSlider/moment-with-locales.js"></script>
-    <script src="assets/js/lib/rangeSlider/rangeslider.init.js"></script>
-
-    <!-- Bar Rating-->
-    <script src="assets/js/lib/barRating/jquery.barrating.js"></script>
-    <script src="assets/js/lib/barRating/barRating.init.js"></script>
-
-    <!-- jRate -->
-    <script src="assets/js/lib/rating1/jRate.min.js"></script>
-    <script src="assets/js/lib/rating1/jRate.init.js"></script>
 
     <!-- Sweet Alert -->
     <script src="assets/js/lib/sweetalert/sweetalert.min.js"></script>

@@ -6,22 +6,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- <link rel="icon" type="image/png" href="<?php echo base_url(); ?>assests/images/icons/favicon.ico"/> -->
 <!--===============================================================================================-->
-  <link rel="stylesheet" type="text/css" href="assests/vendor/bootstrap/css/bootstrap.min.css"/>
+  <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assests/vendor/bootstrap/css/bootstrap.min.css"/>
 <!--===============================================================================================-->
-  <link rel="stylesheet" type="text/css" href="assests/fonts/font-awesome-4.7.0/css/font-awesome.min.css"/>
+  <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assests/fonts/font-awesome-4.7.0/css/font-awesome.min.css"/>
 <!--===============================================================================================-->
-  <link rel="stylesheet" type="text/css" href="assests/fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+  <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assests/fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
 <!--===============================================================================================-->
-  <link rel="stylesheet" type="text/css" href="assests/vendor/animate/animate.css">
+  <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assests/vendor/animate/animate.css">
 <!--===============================================================================================-->  
-  <link rel="stylesheet" type="text/css" href="assests/vendor/css-hamburgers/hamburgers.min.css">
+  <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assests/vendor/css-hamburgers/hamburgers.min.css">
 <!--===============================================================================================-->
-  <link rel="stylesheet" type="text/css" href="assests/vendor/animsition/css/animsition.min.css">
+  <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assests/vendor/animsition/css/animsition.min.css">
 <!--===============================================================================================-->
-  <link rel="stylesheet" type="text/css" href="assests/vendor/select2/select2.min.css">
+  <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assests/vendor/select2/select2.min.css">
 <!--===============================================================================================-->  
-  <link rel="stylesheet" type="text/css" href="assests/vendor/daterangepicker/daterangepicker.css">
-  <link rel="stylesheet" type="text/css" href="assests/css/main.css">
+  <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assests/vendor/daterangepicker/daterangepicker.css">
+  <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assests/css/main.css">
 
 <div class="form" style="">
       
@@ -127,21 +127,21 @@ function openTab(cityName) {
 
 }  
 </script>
-<script src="assests/vendor/jquery/jquery-3.2.1.min.js"></script>
+<script src="<?php echo base_url(); ?>assests/vendor/jquery/jquery-3.2.1.min.js"></script>
 <!--===============================================================================================-->
-  <script src="assests/vendor/animsition/js/animsition.min.js"></script>
+  <script src="<?php echo base_url(); ?>assests/vendor/animsition/js/animsition.min.js"></script>
 <!--===============================================================================================-->
-  <script src="assests/vendor/bootstrap/js/popper.js"></script>
-  <script src="assests/vendor/bootstrap/js/bootstrap.min.js"></script>
+  <script src="<?php echo base_url(); ?>assests/vendor/bootstrap/js/popper.js"></script>
+  <script src="<?php echo base_url(); ?>assests/vendor/bootstrap/js/bootstrap.min.js"></script>
 <!--===============================================================================================-->
-  <script src="assests/vendor/select2/select2.min.js"></script>
+  <script src="<?php echo base_url(); ?>assests/vendor/select2/select2.min.js"></script>
   
 <!--===============================================================================================-->
-  <script src="assests/vendor/daterangepicker/moment.min.js"></script>
-  <script src="assests/vendor/daterangepicker/daterangepicker.js"></script>
+  <script src="<?php echo base_url(); ?>assests/vendor/daterangepicker/moment.min.js"></script>
+  <script src="<?php echo base_url(); ?>assests/vendor/daterangepicker/daterangepicker.js"></script>
 <!--===============================================================================================-->
-  <script src="assests/vendor/countdowntime/countdowntime.js"></script>
-  <script src="assests/js/main.js"></script>
+  <script src="<?php echo base_url(); ?>assests/vendor/countdowntime/countdowntime.js"></script>
+  <script src="<?php echo base_url(); ?>assests/js/main.js"></script>
 <!--===============================================================================================-->
  
 
