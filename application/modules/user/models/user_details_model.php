@@ -7,12 +7,14 @@ class User_details_model extends CI_Model {
 	public $protected_attributes = array('ud_id');
 	protected $primary_key = 'ud_id';
 
-	// public function getuserdata($value='')
-	// {
-	// 	$this->db->select('*');
-	// 	$this->db->from($_table);
-	// 	$this->db->where('Field / comparison', $Value);
-	// }
+	
+
+	public function getuserdetailsdata($value='')
+	{
+		$this->db->select('*');
+		$this->db->from($_table);
+		$this->db->where('Field / comparison', $Value);
+	}
 
 	
 

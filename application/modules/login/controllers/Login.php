@@ -48,14 +48,14 @@ class Login extends CI_Controller {
 		$insrt =$this->lm->signining($data);
 		if($insrt){
 			
-			$this->session->set_flashdata('messageS', 'Sign Up sucessfuly.');
+			$this->session->set_flashdata('messageS', 'Sign Up sucessfuly...Please login Now.');
 
 		}else{
 			
 			$this->session->set_flashdata('messageE', 'Error occured try again.');
 
 		}
-		$this->load->view('loginsignup', $datas);
+		redirrect('login','refresh');
 	}
 	public function loginned()
 	{
@@ -81,9 +81,9 @@ class Login extends CI_Controller {
 
 			$insrt =$this->sm->insert($arraysession);
 
-			$this->session->set_flashdata('messageS', 'Sign Up sucessfuly.');
+			$this->session->set_flashdata('messageS', 'Loggined sucessfuly.');
 			
-				redirect('admin/index','refresh');
+				redirect('user/dashboard','refresh');
 			
 		}else{
 			$this->session->set_flashdata('messageE', 'Username or Password is incorrect..please try again.');

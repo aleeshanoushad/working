@@ -51,7 +51,7 @@
                         </div>
                       </div>
                       <div class="col-lg-8">
-                        <div class="user-profile-name"><?php echo  $userdetails->ud_firstname." ".$userdetails->ud_lastname; ?></div>
+                        <div class="user-profile-name"><?php echo  $userdetails->firstname." ".$userdetails->lastname; ?></div>
                         <div class="user-Location">
                           <i class="ti-location-pin"></i> New York, New York</div>
                         <div class="user-job-title">Product Designer</div>

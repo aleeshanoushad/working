@@ -1,5 +1,6 @@
 <?php include 'header.php'; ?>
-<?php include 'sidebar-admin.php'; ?>
+
+<?php if($userdetails)if($userdetails->usertype == 1 ){ include 'sidebar-admin.php'; }else{ include 'sidebar-user.php'; }?>
 
 
 <section id="main-content">
@@ -9,53 +10,52 @@
 				<div class="card-body">
 					<!-- tab start-->
 					<ul class="nav nav-tabs customtab2" role="tablist">
-						<li class="nav-item"> <a class="nav-link active" data-toggle="tab" href="#home7" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">Basic Details</span></a> </li>
+						<li class="nav-item"> <a class="nav-link active" data-toggle="tab" href="#basic" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">Basic Details</span></a> </li>
 
-						<li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#profile7" role="tab"><span class="hidden-sm-up"><i class="ti-user"></i></span> <span class="hidden-xs-down">Professional Details</span></a> </li>
+						<li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#professional" role="tab"><span class="hidden-sm-up"><i class="ti-user"></i></span> <span class="hidden-xs-down">Professional Details</span></a> </li>
 
 						<!-- <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#messages7" role="tab"><span class="hidden-sm-up"><i class="ti-email"></i></span> <span class="hidden-xs-down">Messages</span></a> </li> -->
 					</ul>
 					<!-- Tab panes -->
 					<div class="tab-content">
-						<div class="tab-pane active" id="home7" role="tabpanel">
+						<div class="tab-pane active" id="basic" role="tabpanel">
 							<div class="p-20">
-								
 								<div class="form-validation">
-									<form class="form-valide" action="<?php echo base_url(); ?>admin/addingprofile" method="post">
+									<form class="form-valide" action="<?php echo base_url(); ?>user/addingprofile" method="post">
 										<div class="form-group row">
-											<label class="col-lg-2 col-form-label" for="val-username">First Name <span class="text-danger">*</span></label>
+											<label class="col-lg-2 col-form-label" for="firstname">First Name <span class="text-danger">*</span></label>
 											<div class="col-lg-8">
-												<input type="text" class="form-control input-focus" id="val-username" name="val-username" placeholder="Enter a First Name..">
+												<input type="text" class="form-control input-focus" id="firstname" name="firstname" placeholder="Enter a First Name..">
 											</div>
 										</div>
 										<div class="form-group row">
-											<label class="col-lg-2 col-form-label" for="val-username">Last Name <span class="text-danger">*</span></label>
+											<label class="col-lg-2 col-form-label" for="lastname">Last Name <span class="text-danger">*</span></label>
 											<div class="col-lg-8">
-												<input type="text" class="form-control input-focus" id="val-username" name="val-username" placeholder="Enter a Last Name..">
+												<input type="text" class="form-control input-focus" id="lastname" name="lastname" placeholder="Enter a Last Name..">
 											</div>
 										</div>
 										<div class="form-group row">
-											<label class="col-lg-2 col-form-label" for="val-email">Username/Email <span class="text-danger">*</span></label>
+											<label class="col-lg-2 col-form-label" for="username">Username/Email <span class="text-danger">*</span></label>
 											<div class="col-lg-8">
-												<input type="text" class="form-control input-focus" id="val-email" name="val-email" placeholder="Your valid Username/Email..">
+												<input type="text" class="form-control input-focus" value="" id="username" name="username" placeholder="Your valid Username/Email..">
 											</div>
 										</div>
 										<div class="form-group row">
-											<label class="col-lg-2 col-form-label" for="val-username">Address <span class="text-danger">*</span></label>
+											<label class="col-lg-2 col-form-label" for="Address1">Address <span class="text-danger">*</span></label>
 											<div class="col-lg-8">
-												<input type="text" class="form-control input-focus" id="val-username" name="val-username" placeholder="Enter a Address..">
+												<input type="text" class="form-control input-focus" id="Address1" name="Address1" placeholder="Enter a Address..">
 											</div>
 										</div>
 										<div class="form-group row">
-											<label class="col-lg-2 col-form-label" for="val-username">&nbsp;&nbsp;&nbsp;</label>
+											<label class="col-lg-2 col-form-label" for="Address2">&nbsp;&nbsp;&nbsp;</label>
 											<div class="col-lg-8">
-												<input type="text" class="form-control input-focus" id="val-username" name="val-username" >
+												<input type="text" class="form-control input-focus" id="Address2" name="Address2" >
 											</div>
 										</div>
 										<div class="form-group row">
-											<label class="col-lg-2 col-form-label " for="val-select2">District <span class="text-danger">*</span></label>
+											<label class="col-lg-2 col-form-label " for="district">District <span class="text-danger">*</span></label>
 											<div class="col-lg-8">
-												<select class="js-select2 form-control input-focus" id="val-select2" name="val-select2" style="width: 100%;" data-placeholder="Choose one..">
+												<select class="js-select2 form-control input-focus" id="district" name="district" style="width: 100%;" data-placeholder="Choose one..">
 													<option value="">Select Value</option>
 													<option value="Alappuzha">Alappuzha</option>
 													<option value="Ernakulam">Ernakulam</option>
@@ -75,14 +75,20 @@
 											</div>
 										</div>
 										<div class="form-group row">
-											<label class="col-lg-2 col-form-label " for="val-phoneus">Phone (US) <span class="text-danger">*</span></label>
+											<label class="col-lg-2 col-form-label " for="phone">Phone<span class="text-danger">*</span></label>
 											<div class="col-lg-8">
-												<input type="text" class="form-control input-focus" id="val-phoneus" name="val-phoneus" >
+												<input type="text" class="form-control input-focus" id="phone" name="phone" >
+											</div>
+										</div>
+										<div class="form-group row">
+											<label class="col-lg-2 col-form-label " for="profile">Profile Picture<span class="text-danger">*</span></label>
+											<div class="col-lg-8">
+												<input type="file" class="form-control input-focus" id="profile" name="profile" >
 											</div>
 										</div>
 										<div class="form-group row">
 											<div class="col-lg-8 ml-auto">
-												<button type="submit" class="btn btn-primary">Submit</button>
+												<button type="submit"   class="btn btn-primary">Submit</button>
 											</div>
 										</div>
 									</form>
@@ -91,7 +97,7 @@
 							</div>
 						</div>
 
-						<div class="tab-pane  p-20" id="profile7" role="tabpanel">
+						<div class="tab-pane  p-20" id="professional" role="tabpanel">
 							<div class="form-validation">
 								<form class="form-valide" action="<?php echo base_url(); ?>admin/" method="post">
 

@@ -30,7 +30,7 @@
 			}
 		 public function getuserdetails($userid=FALSE)
 		{
-		    $this->db->select('usertype,ud_firstname,ud_lastname');
+		    $this->db->select('usertype,firstname,lastname');
 		    $this->db->from('user_model a');
 		    $this->db->join('user_details_model b', 'a.userid = b.ud_userid', 'left');
 		    $this->db->where('userid', $userid);

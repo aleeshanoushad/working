@@ -2,14 +2,34 @@
     <div class="nano">
       <div class="nano-content">
         <div class="logo">
-          <a href="<?php echo base_url(); ?>user/profile">
-            <img src="assets/images/logo.png" alt="" />
-            <span><?php echo  $userdetails->firstname." ".$userdetails->lastname; ?></span>
+          <a href="index.html">
+            <!-- <img src="assets/images/logo.png" alt="" /> -->
+            <span>Focus</span>
           </a>
         </div>
         <ul>
-        
-          <!-- <li>
+          <li class="label">Main</li>
+          <li>
+            <a class="sidebar-sub-toggle">
+              <i class="ti-home"></i> Dashboard
+              <span class="badge badge-primary">2</span>
+              <span class="sidebar-collapse-icon ti-angle-down"></span>
+            </a>
+            <ul>
+              <li>
+                <a href="index.html">Dashboard 1</a>
+              </li>
+              <li>
+                <a href="index1.html">Dashboard 2</a>
+              </li>
+
+
+
+            </ul>
+          </li>
+
+          <li class="label">Apps</li>
+          <li>
             <a class="sidebar-sub-toggle">
               <i class="ti-bar-chart-alt"></i> Charts
               <span class="sidebar-collapse-icon ti-angle-down"></span>
@@ -37,51 +57,45 @@
                 <a href="chart-knob.html">Knob</a>
               </li>
             </ul>
-          </li> -->
-         
-          <li>
-            <a href="<?php echo base_url(); ?>user/dashboard">
-              <i class="ti-home"></i>Dashboard<span class="badge badge-primary">2</span></a>
-
           </li>
           <li>
-            <a href="<?php echo base_url(); ?>user/profile">
-              <i class="ti-user"></i>View Profile</a>
+            <a href="app-event-calender.html">
+              <i class="ti-calendar"></i> Calender </a>
           </li>
-           <li>
-              <a href="<?php echo base_url(); ?>user/addprofile">
-                <i class="ti-email"></i>Update Profile</a>
-              </li>
-          <!-- <li>
+          <li>
             <a href="app-email.html">
               <i class="ti-email"></i> Email</a>
           </li>
           <li>
+            <a href="app-profile.html">
+              <i class="ti-user"></i> Profile</a>
+          </li>
+          <li>
             <a href="app-widget-card.html">
               <i class="ti-layout-grid2-alt"></i> Widget</a>
-          </li> -->
-          <li class="label">Documents</li>
+          </li>
+          <li class="label">Features</li>
           <li>
             <a class="sidebar-sub-toggle">
-              <i class="ti-layout"></i>All Documents
+              <i class="ti-layout"></i> UI Elements
               <span class="sidebar-collapse-icon ti-angle-down"></span>
             </a>
             <ul>
               <li>
-                <a href="ui-typography.html">Add New Documents</a>
+                <a href="ui-typography.html">Typography</a>
               </li>
               <li>
-                <a href="ui-alerts.html">View All Documents</a>
+                <a href="ui-alerts.html">Alerts</a>
               </li>
 
               <li>
-                <a href="ui-button.html">Edit Documents</a>
+                <a href="ui-button.html">Button</a>
               </li>
               <li>
-                <a href="ui-dropdown.html">Delete Documents</a>
+                <a href="ui-dropdown.html">Dropdown</a>
               </li>
 
-              <!-- <li>
+              <li>
                 <a href="ui-list-group.html">List Group</a>
               </li>
 
@@ -90,19 +104,18 @@
               </li>
               <li>
                 <a href="ui-tab.html">Tab</a>
-              </li> -->
+              </li>
 
             </ul>
           </li>
           <li>
             <a class="sidebar-sub-toggle">
-              <i class="ti-panel"></i> Renew Pendings Docs
+              <i class="ti-panel"></i> Components
               <span class="sidebar-collapse-icon ti-angle-down"></span>
             </a>
-            <!-- All renew needed documents list here -->
             <ul>
               <li>
-                <a href="uc-calendar.html">Settings</a>
+                <a href="uc-calendar.html">Calendar</a>
               </li>
               <li>
                 <a href="uc-carousel.html">Carousel</a>
@@ -143,7 +156,7 @@
               </li>
             </ul>
           </li>
-          <!-- <li>
+          <li>
             <a class="sidebar-sub-toggle">
               <i class="ti-layout-grid4-alt"></i> Table
               <span class="sidebar-collapse-icon ti-angle-down"></span>
@@ -188,11 +201,14 @@
                 <a href="vector-map.html">Vector Map</a>
               </li>
             </ul>
-          </li> -->
-      
-         
-        <!--   <li class="label">Extra</li> -->
-          <!-- <li>
+          </li>
+          <li class="label">Form</li>
+          <li>
+            <a href="form-basic.html">
+              <i class="ti-view-list-alt"></i> Basic Form </a>
+          </li>
+          <li class="label">Extra</li>
+          <li>
             <a class="sidebar-sub-toggle">
               <i class="ti-files"></i> Invoice
               <span class="sidebar-collapse-icon ti-angle-down"></span>
@@ -205,8 +221,8 @@
                 <a href="invoice-editable.html">Editable</a>
               </li>
             </ul>
-          </li> -->
-          <!-- <li>
+          </li>
+          <li>
             <a class="sidebar-sub-toggle">
               <i class="ti-target"></i> Pages
               <span class="sidebar-collapse-icon ti-angle-down"></span>
@@ -222,17 +238,13 @@
                 <a href="page-reset-password.html">Forgot password</a>
               </li>
             </ul>
-          </li> -->
-          <!-- <li>
-            <a href="../documentation/index.html">
-              <i class="ti-file"></i> Documentation</a>
-          </li> -->
-           <li>
-            <a href="<?php echo base_url(); ?>/user/settings">
-              <i class="ti-view-list-alt"></i>Settings</a>
           </li>
           <li>
-            <a href="<?php echo base_url(); ?>login/logout">
+            <a href="../documentation/index.html">
+              <i class="ti-file"></i> Documentation</a>
+          </li>
+          <li>
+            <a>
               <i class="ti-close"></i> Logout</a>
           </li>
         </ul>
@@ -373,7 +385,7 @@
             </div>
             <div class="dropdown dib">
               <div class="header-icon" data-toggle="dropdown">
-                <span class="user-avatar"><?php echo  $userdetails->firstname." ".$userdetails->lastname; ?>
+                <span class="user-avatar">John
                   <i class="ti-angle-down f-s-10"></i>
                 </span>
                 <div class="drop-down dropdown-profile dropdown-menu dropdown-menu-right">
@@ -384,26 +396,33 @@
                   <div class="dropdown-content-body">
                     <ul>
                       <li>
-                        <a href="<?php echo base_url(); ?>admin/profile">
+                        <a href="#">
                           <i class="ti-user"></i>
                           <span>Profile</span>
                         </a>
                       </li>
 
                       <li>
-                        <a href="<?php echo base_url(); ?>">
+                        <a href="#">
                           <i class="ti-email"></i>
                           <span>Inbox</span>
                         </a>
                       </li>
                       <li>
-                        <a href="<?php echo base_url(); ?>user/settings">
+                        <a href="#">
                           <i class="ti-settings"></i>
                           <span>Setting</span>
                         </a>
                       </li>
+
                       <li>
-                        <a href="<?php echo base_url(); ?>login/logout">
+                        <a href="#">
+                          <i class="ti-lock"></i>
+                          <span>Lock Screen</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
                           <i class="ti-power-off"></i>
                           <span>Logout</span>
                         </a>
@@ -424,5 +443,28 @@
   <div class="content-wrap">
     <div class="main">
       <div class="container-fluid">
-        
-          
+        <div class="row">
+          <div class="col-lg-8 p-r-0 title-margin-right">
+            <div class="page-header">
+              <div class="page-title">
+                <h1>Hello,
+                  <span>Welcome Here</span>
+                </h1>
+              </div>
+            </div>
+          </div>
+          <!-- /# column -->
+          <div class="col-lg-4 p-l-0 title-margin-left">
+            <div class="page-header">
+              <div class="page-title">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item">
+                    <a href="#">Dashboard</a>
+                  </li>
+                  <li class="breadcrumb-item active">App-Profile</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+          <!-- /# column -->
+        </div>
