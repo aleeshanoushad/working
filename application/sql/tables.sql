@@ -1,21 +1,23 @@
+#19/09/19
+DROP TABLE IF EXISTS `user_details_model`;
+CREATE TABLE `user_details_model` (
+  `ud_id` int(11) NOT NULL,
+  `ud_userid` int(11) NOT NULL,
+  `ud_address` varchar(255) DEFAULT NULL,
+  `ud_phone` varchar(50) DEFAULT NULL,
+  `ud_education` varchar(255) DEFAULT NULL,
+  `ud_occupation` varchar(255) DEFAULT NULL,
+  `ud_companyname` varchar(255) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+ALTER TABLE `user_details_model`
+  ADD PRIMARY KEY (`ud_id`);
+  ALTER TABLE `user_details_model`
+  MODIFY `ud_id` int(11) NOT NULL AUTO_INCREMENT;
+
 #25/06/19
 
 ALTER TABLE `user_model` ADD `is_active` INT(11) NOT NULL DEFAULT '0' AFTER `password`;
 
-CREATE TABLE `user_details_model` (
-  `ud_id` int(11) NOT NULL,
-  `ud_userid` int(11) NOT NULL COMMENT 'foerign key of user model',
-  `ud_firstname` varchar(250) NOT NULL,
-  `ud_lastname` varchar(250) NOT NULL
-);
-
-
-
-ALTER TABLE `user_details_model`
-  MODIFY `ud_id` int(11) NOT NULL AUTO_INCREMENT;
-
-  #on developmnt only 
-INSERT INTO `user_details_model` (`ud_id`, `ud_userid`, `ud_firstname`, `ud_lastname`) VALUES ('1', '1', 'Aleesha', 'Noushad'), ('2', '2', 'christee', 'gloria');
 #21/06/19
 CREATE TABLE `ci_sessions` (
   `session_id` varchar(40) NOT NULL DEFAULT '0',

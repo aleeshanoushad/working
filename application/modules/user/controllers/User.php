@@ -7,7 +7,7 @@ class User extends CI_Controller {
 	{
 		parent::__construct();
 		$this->load->model('login/Login_model','lm');
-		$this->load->model('login/user_details_model','ud');
+		$this->load->model('user/user_details_model','ud');
 
 	}
 	
@@ -35,9 +35,7 @@ class User extends CI_Controller {
 		
 		$userid = $this->session->userdata('user_id');
 		$data['userdetails'] =$this->lm->getuserdetails($userid);
-		// echo "<pre>";
-		// print_r ($data['userdetails']);
-		// echo "</pre>";exit;
+		
 		$this->load->view('profile', $data);
 	}
 
@@ -45,6 +43,12 @@ class User extends CI_Controller {
 		
 		$userid = $this->session->userdata('user_id');
 		$data['userdetails'] =$this->lm->getuserdetails($userid);
+		$data['userdata']=$this->lm->getalluserdetails($userid);
+		
+		// echo "<pre>";
+		// print_r ($data['userdata']);
+		// echo "</pre>";exit;
+
 		$this->load->view('addprofile', $data);
 	}
  
@@ -52,7 +56,7 @@ class User extends CI_Controller {
  	{
  		$userid = $this->session->userdata('user_id');
 		$data['userdetails'] =$this->lm->getuserdetails($userid);
-		$data['userdata']=$this->ud->getuserdetailsdata();
+		
 		$this->load->view('addprofile', $data);
 
  	}
@@ -79,14 +83,14 @@ class User extends CI_Controller {
 			'ud_phone' =>$phone , 
 			
 		);
-		$insert_user =$this->ud->insertuser($user_table);
+		$insert_user =$this->lm->signining($user_table);
 		$insert_user_details =$this->ud->insertuserdetailsdata($user_details);
 		if($insert_user && $insert_user_details){
 			$this->session->set_flashdata('messageS', 'Sign Up sucessfuly...Please login Now.');
-			redirect('user/editprofile','refresh');
+			redirect('user/editprofile#professional','refresh');
 
 		}else{
-			$this->
+			// $this->
 		}
 	}
 	

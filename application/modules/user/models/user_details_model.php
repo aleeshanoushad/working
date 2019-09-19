@@ -12,10 +12,28 @@ class User_details_model extends CI_Model {
 	public function getuserdetailsdata($value='')
 	{
 		$this->db->select('*');
-		$this->db->from($_table);
-		$this->db->where('Field / comparison', $Value);
+		$this->db->from('user_details_model');
+		$this->db->where('ud_userid', $value);
+		$query = $this->db->get();
+        if ($query->num_rows() > 0) {
+            return $query->result();
+        } else {
+            return false;
+        }
 	}
-
+    public function insertuserdetailsdata($value=NULL)
+    {
+    	if($value!=NULL){
+    		$insrt =$this->_table->insert($value);
+    		if($insrt){
+    			return true;
+    		}else{
+    			return false;
+    		}
+    	}else{
+    		return false;
+    	}
+    }
 	
 
 }

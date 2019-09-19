@@ -17,6 +17,7 @@
 						<!-- <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#messages7" role="tab"><span class="hidden-sm-up"><i class="ti-email"></i></span> <span class="hidden-xs-down">Messages</span></a> </li> -->
 					</ul>
 					<!-- Tab panes -->
+					
 					<div class="tab-content">
 						<div class="tab-pane active" id="basic" role="tabpanel">
 							<div class="p-20">
@@ -25,19 +26,19 @@
 										<div class="form-group row">
 											<label class="col-lg-2 col-form-label" for="firstname">First Name <span class="text-danger">*</span></label>
 											<div class="col-lg-8">
-												<input type="text" class="form-control input-focus" id="firstname" name="firstname" placeholder="Enter a First Name..">
+												<input type="text" class="form-control input-focus" id="firstname" name="firstname" placeholder="Enter a First Name.." value="<?php if($userdetails) { echo $userdetails->firstname; } ?>">
 											</div>
 										</div>
 										<div class="form-group row">
 											<label class="col-lg-2 col-form-label" for="lastname">Last Name <span class="text-danger">*</span></label>
 											<div class="col-lg-8">
-												<input type="text" class="form-control input-focus" id="lastname" name="lastname" placeholder="Enter a Last Name..">
+												<input type="text" class="form-control input-focus" id="lastname" name="lastname" placeholder="Enter a Last Name.." value="<?php if($userdetails) { echo $userdetails->lastname; } ?>">
 											</div>
 										</div>
 										<div class="form-group row">
 											<label class="col-lg-2 col-form-label" for="username">Username/Email <span class="text-danger">*</span></label>
 											<div class="col-lg-8">
-												<input type="text" class="form-control input-focus" value="" id="username" name="username" placeholder="Your valid Username/Email..">
+												<input type="text" class="form-control input-focus"  id="username" name="username" placeholder="Your valid Username/Email.." value="<?php if($userdata) { echo $userdata->email; } ?>">
 											</div>
 										</div>
 										<div class="form-group row">
