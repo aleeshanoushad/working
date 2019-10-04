@@ -60,7 +60,7 @@
             <a href="app-widget-card.html">
               <i class="ti-layout-grid2-alt"></i> Widget</a>
           </li> -->
-          <li class="label">Documents</li>
+        
           <li>
             <a class="sidebar-sub-toggle">
               <i class="ti-layout"></i>All Documents
@@ -68,29 +68,11 @@
             </a>
             <ul>
               <li>
-                <a href="ui-typography.html">Add New Documents</a>
+                <a href="<?php echo base_url(); ?>user/adddocuments">Add New Document</a>
               </li>
               <li>
-                <a href="ui-alerts.html">View All Documents</a>
+                <a href="<?php echo base_url(); ?>user/viewdocuments">View All Documents</a>
               </li>
-
-              <li>
-                <a href="ui-button.html">Edit Documents</a>
-              </li>
-              <li>
-                <a href="ui-dropdown.html">Delete Documents</a>
-              </li>
-
-              <!-- <li>
-                <a href="ui-list-group.html">List Group</a>
-              </li>
-
-              <li>
-                <a href="ui-progressbar.html">Progressbar</a>
-              </li>
-              <li>
-                <a href="ui-tab.html">Tab</a>
-              </li> -->
 
             </ul>
           </li>

@@ -51,15 +51,15 @@ class User extends CI_Controller {
 
 		$this->load->view('addprofile', $data);
 	}
- 
- 	public function editprofile($value='')
- 	{
- 		$userid = $this->session->userdata('user_id');
+
+	public function editprofile($value='')
+	{
+		$userid = $this->session->userdata('user_id');
 		$data['userdetails'] =$this->lm->getuserdetails($userid);
 		
 		$this->load->view('addprofile', $data);
 
- 	}
+	}
 	public function addingprofile()
 	{
 								      // profile
@@ -94,8 +94,21 @@ class User extends CI_Controller {
 		}
 	}
 	
+	public function adddocuments($value='')
+	{
+		$userid = $this->session->userdata('user_id');
+		$data['userdetails'] =$this->lm->getuserdetails($userid);
+		$this->load->view('adddocuments', $data);
+	}
+	public function addingdocumnets($value='')
+	{
+		$documentname = $this->input->post('documentname');
+		$documentno = $this->input->post('documentno');
+		$expiratndate = strtotime($this->input->post('expiratndate'));
+		$remaindbfr = $this->input->post('remaindbfr');
+		$remaindmeby = $this->input->post('remaindmeby');
 
-
+	}
 }
 
 /* End of file User.php */

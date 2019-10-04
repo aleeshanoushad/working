@@ -66,12 +66,11 @@
                 <span class="sidebar-collapse-icon ti-angle-down"></span>
               </a>
               <ul>
-               <li>
-                <a href="#">Add Documents</a>
-              </li>
+              
               <li>
                 <a href="#">View All Documents</a>
               </li>
+              <!-- filetr using this month renewals,this week,pending renewals. -->
               <li>
                 <a href="#">Renew Pending Docs</a>
               </li>
