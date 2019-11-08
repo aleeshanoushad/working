@@ -57,6 +57,8 @@ class Login extends CI_Controller {
 		}
 		redirrect('login','refresh');
 	}
+
+
 	public function loginned()
 	{
 		$this->load->model('login/Login_model','lm');

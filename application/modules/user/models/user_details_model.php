@@ -24,7 +24,8 @@ class User_details_model extends CI_Model {
     public function insertuserdetailsdata($value=NULL)
     {
     	if($value!=NULL){
-    		$insrt =$this->_table->insert($value);
+           
+    		$insrt =$this->db->insert('user_details_model',$value);
     		if($insrt){
     			return true;
     		}else{
@@ -33,6 +34,22 @@ class User_details_model extends CI_Model {
     	}else{
     		return false;
     	}
+    }
+    public function updateprofsion($value=array(),$id)
+    {
+        if(empty($value)){
+            return false;
+        }else{
+            $this->db->set($value);
+            $this->db->where('ud_userid',$id);
+            $query =$this->db->update('user_details_model');
+            
+            if($query){
+                return true;
+            }else{
+                return false;
+            }
+        }
     }
 	
 

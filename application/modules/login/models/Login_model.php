@@ -14,6 +14,21 @@ class Login_model extends CI_Model{
 			return false;  
 		}
 	}
+	public function updatesigning($value=NULL,$id)			
+	{
+		if($value){
+
+			$this->db->set($value);
+			$this->db->where('userid',$id);
+			$query =$this->db->update('user_model');
+			
+			if($query){
+				return true;
+			}else{
+				return false;
+			}
+		}
+	}
 	public function activeuser($mailid,$pass)
 	{
 		$this->db->select('userid,usertype,firstname,lastname');
